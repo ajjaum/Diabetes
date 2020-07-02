@@ -1,5 +1,5 @@
 # Análise de Dados sobre Diabetes no Brasil - VIGITEL
-# Data Analysis on Diabetes in Brazil - VIGITEL
+## Data Analysis on Diabetes in Brazil - VIGITEL
 
 # Descrição Resumida do Projeto
 ~~~
@@ -68,7 +68,6 @@ As consideradas elegíveis passam por uma segunda etapa da amostragem do inquér
 
 Com base nos dados do Vigitel de 2007 a 2019 qual a prevalência de diabetes em amostras da população brasileira e quais fatores podem estar associados a esta doença?
 
-
 ## Objetivos do projeto
 
 Avaliar a prevalência de diabetes em brasileiros e verificar se há associação com outros fatores da pesquisa Vigitel de 2007 a 2019.
@@ -136,7 +135,16 @@ plt.show();
 
 ## Evolução do Projeto
 
-O projeto teve como proposta inicial analisar a correlação da incidência de diabetes com o consumo de alimentos industrializados ("junk foods")
+O projeto teve como proposta inicial analisar a correlação da incidência de diabetes com o consumo de alimentos industrializados ("junk foods").
+
+Dificuldades:
+
+- Grande volume de dados (50.000 linhas x 400 colunas por tabela);
+- Códigos de colunas não estavam homogêneos;
+- O dicionário do Vigitel não descrevia todas as colunas;
+- Colunas faltantes em algumas tabelas;
+- Dificuldade para criar tabelas;
+- Peso Rake;
 
 # Resultados e Discussão
 
@@ -164,7 +172,16 @@ A discussão dos resultados também pode ser feita aqui na medida em que os resu
 
 # Conclusões
 
+- Prevalência de diabetes aumentou 6% em 13 anos;
+- Prevalência de consumo de refrigerante diminuiu;
+- Prevalência de diabetes em pessoas com bolsa família apresenta tendência de redução, diferentemente da tendência global;
+- Prevalência maior entre as mulheres em relação aos homens, e mais que o dobro em 2019;
 
 
 # Trabalhos Futuros
 
+Este trabalho demonstrou o quão importante é entender a base de dados e saber quais gráficos e tabelas melhor representam o resultado de uma análise. No caso do VIGITEL, por ser em formato de pesquisa (_Survey_) encontramos a dificuldade de se utilizar o **peso rake**, conforme citado na página do VIGITEL. Portanto, como trabalhos futuros é aprofundar a programação para que leve em consideração esta ponderação nos dados, além de procurar outras bases de dados brasileiras referentes à incidência e prevalência de diabetes.
+
+- Utilizar outras bases de dados;
+- Dados socioeconômicos;
+- Dados alimentícios mais complexos;
