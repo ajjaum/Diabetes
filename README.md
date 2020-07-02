@@ -19,8 +19,9 @@
 
 # Vídeo do Projeto
 
-![Video de apresentação](reports/videos/apresentacao_video.mp4)
-https://drive.google.com/open?id=1w2_gVvZoIv54Hqurmj_JNzfqZZGkdpER
+[Vídeo](reports/videos/apresentacao_video.mp4)
+
+[![Watch the video](reports/videos/apresentacao_video.mp4)](reports/videos/apresentacao_video.mp4)
 
 # Introdução e Motivação
 
