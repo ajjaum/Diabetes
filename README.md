@@ -18,6 +18,8 @@
 * João Guilherme Ito Cypriano   - 061701
 
 # Vídeo do Projeto
+
+![Video de apresentação](reports/videos/apresentacao_video.mp4)
 https://drive.google.com/open?id=1w2_gVvZoIv54Hqurmj_JNzfqZZGkdpER
 
 # Introdução e Motivação
