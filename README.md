@@ -1,5 +1,5 @@
-# Projeto `<Análise de Dados sobre Diabetes no Brasil - VIGITEL>`
-# Project `<Data Analysis on Diabetes in Brazil - VIGITEL>`
+# Projeto `Análise de Dados sobre Diabetes no Brasil - VIGITEL`
+# Project `Data Analysis on Diabetes in Brazil - VIGITEL`
 
 # Descrição Resumida do Projeto
 ~~~
@@ -24,22 +24,35 @@
 
 ## Perguntas de Pesquisa
 ~~~
-<Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.>
+Com base nos dados do Vigitel de 2006 a 2019 qual a prevalência de diabetes em amostras da população brasileira e quais fatores podem estar associados a esta doença?
 ~~~
 
 ## Objetivos do projeto
 ~~~
-<Como seu projeto propôs abordar o problema apresentado.>
+Avaliar a prevalência de diabetes em brasileiros e verificar se há associação com outros fatores da pesquisa Vigitel de 2006 a 2019.
 ~~~
 
 # Recursos e Métodos
 
 ## Bases de Dados
-`<Elencar bases de dados utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
+
+Foi utilizado, exclusivamente, os dados disponíveis no portal do Departamento de Informação e Análise Epidemiológica da base de dados do [VIGITEL](http://svs.aids.gov.br/download/Vigitel/). Foram utilizados os dados anos de 2007 a 2013 e 2015 a 2019, para avaliar a evolução da prevalência de diabetes ao longo dos anos da pesquisa e suas associações. O uso das tabelas foram orientadas pelo [Dicionário](http://svs.aids.gov.br/download/Vigitel/Dicionario-de-dados-Vigitel.xls) disponibilizado no [VIGITEL](http://svs.aids.gov.br/download/Vigitel/).  
+
 Base de Dados | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-Base 1 | http://base1.org/ | `<Descrição da Base 1 e para que ela foi usada no projeto.>`
-Base 2 | http://base2.org/ | `<Descrição da Base 2 e para que ela foi usada no projeto.>`
+Base 01 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2007-peso-rake.xls | `Pesquisa VIGITEL do ano de 2007`
+Base 02 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2008-peso-rake.xls | `Pesquisa VIGITEL do ano de 2008`
+Base 03 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2009-peso-rake.xls | `Pesquisa VIGITEL do ano de 2009`
+Base 04 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2010-peso-rake.xls | `Pesquisa VIGITEL do ano de 2010`
+Base 05 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2011-peso-rake.xls | `Pesquisa VIGITEL do ano de 2011`
+Base 06 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2012-peso-rake.xls | `Pesquisa VIGITEL do ano de 2012`
+Base 07 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2013-peso-rake.xls | `Pesquisa VIGITEL do ano de 2014`
+Base 10 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2014-peso-rake.xls | `Pesquisa VIGITEL do ano de 2014`
+Base 11 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2015-peso-rake.xls | `Pesquisa VIGITEL do ano de 2015`
+Base 12 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2016-peso-rake.xls | `Pesquisa VIGITEL do ano de 2016`
+Base 13 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2017-peso-rake.xls | `Pesquisa VIGITEL do ano de 2017`
+Base 14 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2018-peso-rake.xls | `Pesquisa VIGITEL do ano de 2018`
+Base 15 | http://svs.aids.gov.br/download/Vigitel/Vigitel-2019-peso-rake.xls | `Pesquisa VIGITEL do ano de 2019`
 
 ## Ferramentas
 
