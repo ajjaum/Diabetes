@@ -12,10 +12,10 @@
 ~~~
 
 # Equipe
-* Heitor Soares Mattosinho - 262947
-* Tainá Peres Passos - 194220
-* Stephania Slis Raggio Santos - 137608
-* João Guilherme Ito Cypriano - 061701
+* Heitor Soares Mattosinho      - 262947
+* Tainá Peres Passos            - 194220
+* Stephania Slis Raggio Santos  - 137608
+* João Guilherme Ito Cypriano   - 061701
 
 # Vídeo do Projeto
 https://drive.google.com/open?id=1w2_gVvZoIv54Hqurmj_JNzfqZZGkdpER
@@ -32,24 +32,25 @@ Todas essas informações motivam o estudo dos dados de amostras da população 
 Portanto este projeto está dividido nas seguintes seções: 
 
 ~~~
-├── Introdução e Motivação          <- apresentação do projeto
+├── Introdução e Motivação        <- apresentação do projeto
 │   ├── O VIGITEL                   
-│   ├── Perguntas da Pesquisa       <- O que pretendemos responder.
-│   └── Objetivos do projeto        <- Nossa proposta de abordagem.
+│   ├── Perguntas da Pesquisa     <- O que pretendemos responder.
+│   ├── Objetivos do projeto      <- Nossa proposta de abordagem.
+│   └── Referências               <- Referência bibliográfica;
 │
 ├── Recursos e Métodos               
-│   ├── Base de Dados               <- Acesso às bases VIGITEL.
-│   └── Ferramentas                 <- Ferramentas e bibliotecas de programação utilizadas.
+│   ├── Base de Dados             <- Acesso às bases VIGITEL.
+│   └── Ferramentas               <- Ferramentas e bibliotecas de programação utilizadas.
 │
 ├── Metodologia                      
-│   ├── Detalhamento do Projeto     <- Como o projeto foi estruturado.
-│   └── Evolução do Projeto         <- Possíveis problemas enfrentados e possíveis mudanças de trajetória.
+│   ├── Detalhamento do Projeto   <- Como o projeto foi estruturado.
+│   └── Evolução do Projeto       <- Possíveis problemas enfrentados e possíveis mudanças de trajetória.
 │
-├── Resultados e Discussão          <- Conclusões finais do trabalho e as lições aprendidas.
+├── Resultados e Discussão        <- Conclusões finais do trabalho e as lições aprendidas.
 │
-├── Conclusões                      <- Este trabalho respondeu nossa pergunta?
+├── Conclusões                    <- Este trabalho respondeu nossa pergunta?
 │
-└── Trabalhos Futuros               <- O que pretendemos evoluir para este projeto.
+└── Trabalhos Futuros             <- O que pretendemos evoluir para este projeto.
 ~~~
 
 ## O VIGITEL
@@ -65,13 +66,22 @@ As consideradas elegíveis passam por uma segunda etapa da amostragem do inquér
 
 ## Perguntas de Pesquisa
 
-Com base nos dados do Vigitel de 2006 a 2019 qual a prevalência de diabetes em amostras da população brasileira e quais fatores podem estar associados a esta doença?
+Com base nos dados do Vigitel de 2007 a 2019 qual a prevalência de diabetes em amostras da população brasileira e quais fatores podem estar associados a esta doença?
 
 
 ## Objetivos do projeto
 
-Avaliar a prevalência de diabetes em brasileiros e verificar se há associação com outros fatores da pesquisa Vigitel de 2006 a 2019.
+Avaliar a prevalência de diabetes em brasileiros e verificar se há associação com outros fatores da pesquisa Vigitel de 2007 a 2019.
 
+## Referência
+
+> FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
+
+> Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
+
+> MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
+
+> BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
 
 # Recursos e Métodos
 
@@ -125,27 +135,36 @@ plt.show();
 ~~~
 
 ## Evolução do Projeto
-~~~
-<Relate a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.>
-~~~
+
+O projeto teve como proposta inicial analisar a correlação da incidência de diabetes com o consumo de alimentos industrializados ("junk foods")
 
 # Resultados e Discussão
-~~~
+
 <Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
 
 A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
 
-![Image](https://octodex.github.com/images/yaktocat.png)
+![boxplot_inicio_idade_diabetes](reports/figures/boxplot_inicio_idade_diabetes.png)
+
+![indice_diabetes_pessoas_com_pressao_alta](reports/figures/indice_diabetes_pessoas_com_pressao_alta.png)
+
+![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
+
+![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
+
+![geo_capitais_2019](reports/figures/geo_capitais_2019.png)
+
+![prevalencia_diabetes_brasil](reports/figures/prevalencia_diabetes_brasil.png)
+
+![prevalencia_bolsa_familia_diabetes](reports/figures/prevalencia_bolsa_familia_diabetes.png)
+
+![prevalencia_diabetes_genero](reports/figures/prevalencia_diabetes_genero.png)
 
 
-~~~
 
 # Conclusões
-~~~
-<Apresente aqui as conclusões finais do trabalho e as lições aprendidas.>
-~~~
+
+
 
 # Trabalhos Futuros
-~~~
-<Indique trabalhos futuros a partir do ponto alcançado.>
-~~~
+
