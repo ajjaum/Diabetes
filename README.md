@@ -21,7 +21,7 @@
 
 [Vídeo](reports/videos/apresentacao_video.mp4)
 
-[![Watch the video](reports/videos/apresentacao_video.mp4)](reports/videos/apresentacao_video.mp4)
+[![Watch the video](reports/figures/intro.jpg)](reports/videos/apresentacao_video.mp4)
 
 # Introdução e Motivação
 
