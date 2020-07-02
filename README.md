@@ -1,5 +1,5 @@
-# Projeto `Análise de Dados sobre Diabetes no Brasil - VIGITEL`
-# Project `Data Analysis on Diabetes in Brazil - VIGITEL`
+# Análise de Dados sobre Diabetes no Brasil - VIGITEL
+# Data Analysis on Diabetes in Brazil - VIGITEL
 
 # Descrição Resumida do Projeto
 ~~~
@@ -12,13 +12,13 @@
 ~~~
 
 # Equipe
-* `Heitor Soares Mattosinho` - `262947`
-* `Tainá Peres Passos` - `194220`
-* `Stephania Slis Raggio Santos` - `137608`
-* `João Guilherme Ito Cypriano` - `061701`
+* Heitor Soares Mattosinho - 262947
+* Tainá Peres Passos - 194220
+* Stephania Slis Raggio Santos - 137608
+* João Guilherme Ito Cypriano - 061701
 
 # Vídeo do Projeto
-`https://drive.google.com/open?id=1w2_gVvZoIv54Hqurmj_JNzfqZZGkdpER`
+https://drive.google.com/open?id=1w2_gVvZoIv54Hqurmj_JNzfqZZGkdpER
 
 # Introdução e Motivação
 
