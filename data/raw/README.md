@@ -2,7 +2,7 @@
 
 Devido ao tamanho dos arquivos *.xlsx, disponíveis em [VIGITEL](http://svs.aids.gov.br/download/Vigitel/), deixaremos aqui o caminho direto para acesso dos mesmos.
 
-Foram utilizados os dados anos de 2007 a 2013 e 2015 a 2019. Os anos 2006 e 2014 foram excluídos devido a dúvidas nos dados.
+Foram utilizados os dados anos de 2007 a 2019. 2006 foi excluído devido a dúvidas nos dados.
 
 O uso das tabelas foi orientado pelo [Dicionário - 2019](http://svs.aids.gov.br/download/Vigitel/Dicionario-de-dados-Vigitel.xls).
 
