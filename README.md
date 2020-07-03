@@ -138,16 +138,14 @@ plt.show();
 
 ## Evolução do Projeto
 
-O projeto teve como proposta inicial analisar a correlação da incidência de diabetes com o consumo de alimentos industrializados ("junk foods").
+No começo do projeto o grupo tinha uma ideia muito geral sobre como abordaríamos o uso e a visualização dos dados e ao longo do processo conseguimos focar mais em visões mais específicas. Durante a escolha dos bancos de dados que seriam usados, o grupo decidiu tentar encontrar um banco único que abrangesse o máximo de variáveis relevantes para o projeto. Partimos por esse caminho para evitar o grande desafio que é fazer a integração de diferentes bases de dados que contêm diferentes variáveis e também diferentes cortes da população, e que em sua maioria resultando em dados heterogêneos e desbalanceados, gerando uma complexidade muito grande para um projeto de curto prazo. O banco que mais nos pareceu interesse foi o Vigitel, que é uma coleta anual do Ministério da Saúde de dados obtidos por ligações telefônicas nas capitais do Brasil, com um questionário volumoso e bem abrangente. 
+	
+Inicialmente, o Vigitel aparentava ser uma base excelente para o que procurávamos, já que a bases possuíam dados bem sólidos -- anualmente uma tabela contava com, em torno de 51.000 adultos que respondiam um questionário com uma média de 180 perguntas, o que gerava 9.000.000‬ de respostas. Essa base de dados começou em 2006, contudo descartamos a tabela do primeiro ano, visto que ela gerava dados que estavam fora do padrão dos outros anos, provavelmente por algum motivo de diferença de código das colunas ou ordem dos valores. Os dados originais, somando as tabelas de 2007 até 2019, contabilizaram 128.931.758 células de resposta, e após a limpeza e seleção das colunas conseguimos diminuir para 15.546.620 células. 
+	O Vigitel conta com um dicionário contendo a descrição de cada nome-código de coluna e o tipo do dado armazenado. Como exemplo, veja a figura abaixo sobre como a diabetes aparece nesse dicionário:
 
-Dificuldades:
+![exemplo_tabela_dicionario](reports/figures/exemplo_tabela_dicionario.jpg)
 
-- Grande volume de dados (50.000 linhas x 400 colunas por tabela);
-- Códigos de colunas não estavam homogêneos;
-- O dicionário do Vigitel não descrevia todas as colunas;
-- Colunas faltantes em algumas tabelas;
-- Dificuldade para criar tabelas;
-- Peso Rake;
+Uma dificuldade grande que tivemos com a leitura das tabelas é que existem muitas colunas que não estão descritas nesse dicionário. Portanto, podemos ter potencialmente perdido colunas que seriam importantes para uma visualização melhor dos dados e, consequentemente, de gráficos mais significativos. Algumas das tabelas só existiram por um período, como as tabelas que forneciam informações sobre a pessoas que comem doce, ou também a tabela sobre quem recebia bolsa família, que só começou a existir a partir de 2015.
 
 # Resultados e Discussão
 
