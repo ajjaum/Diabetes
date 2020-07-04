@@ -2,9 +2,7 @@
 ## Data Analysis on Diabetes in Brazil - VIGITEL
 
 # Descrição Resumida do Projeto
-~~~
-<Descreva resumidamente o que fará o projeto. O resumo idealmente deve: apresentar o contexto; indicar o problema; apresentar a sua solução para o problema; indicar porque a sua solução é melhor do que os esforços atuais (não obrigatório); concluir com os resultados alcançados.>
-~~~
+
 Neste projeto, foi avaliada a prevalência de diabetes no Brasil utilizando a base de dados Vigitel (Sistema de Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico) de 2007 a 2019. Também foram avaliados fatores que poderiam ser associados a esta doença e realizadas análises estatísticas utilizando a linguagem de programação Python 3 e as bibliotecas Matplotlib, Pandas, Seaborn e Ploty, a fim de compreender melhor a diabetes ao longo do tempo, no Brasil. Pode-se inferir que a prevalência de diabetes: aumentou 6% em 13 anos; apresentou tendência de redução entre os que recebem o auxílio bolsa família do Governo Federal, diferentemente da tendência global; e é maior entre mulheres em relação aos homens. Além disso, o fator consumo de refrigerantes teve diminuição na prevalência.
 
 # Abstract in English
@@ -159,29 +157,29 @@ Outro fato interessante de ser observado é o aumento da prevalência de diabete
 
 ![prevalencia_diabetes_brasil](reports/figures/prevalencia_diabetes_brasil.png)
 
+Sobre o programa bolsa família (PBF), pode-se observar no gráfico que a prevalência de diabetes caiu neste grupo, isto pode estar associado às condicionalidades do programa em que o acesso a saúde e educação são condições para o recebimento do benefício [ref], mas é importante ressaltar que o decréscimo foi de 1% então há necessidade de mais estudos nesta área para afirmar se há relação entre bolsa família e diabetes.
+
 ![prevalencia_bolsa_familia_diabetes](reports/figures/prevalencia_bolsa_familia_diabetes.png)
 
-A partir da análise do gráfico de prevalência do diabetes por gênero, foi possível concluir que o perfil predominante foi o do sexo feminino e através da literatura [6] também foi constatado que a maioria dessa população pertence ao sexo feminino, o que pode ter sido contribuído pelo fato de que as mulheres procuram com mais frequência os serviços de saúde e também devido às alterações hormonais, visto que a idade de início é aproximado à idade da menopausa, foi correlacionado a hipertensão como doença concomitante e ao nível de escolaridade no qual a maioria não concluiu o ensino médio; vale ressaltar que esse estudo foi realizado em uma amostra de 222 pessoas, o que também limita os resultados.
+A partir da análise do gráfico de prevalência do diabetes por gênero, foi possível concluir que o perfil predominante foi o do sexo feminino e através da literatura [6] também foi constatado que a maioria dessa população pertence ao sexo feminino, o que pode ter sido contribuído pelo fato de que as mulheres procuram com mais frequência os serviços de saúde e também devido às alterações hormonais, visto que a idade de início é aproximado à idade da menopausa, foi correlacionado a hipertensão como doença concomitante e ao nível de escolaridade no qual a maioria não concluiu o ensino médio; vale ressaltar que esse estudo citado foi realizado em uma amostra de 222 pessoas, em uma cidade do interior do estado do Rio Grande do Sul, o que também limita a generalização dos resultados.
 
 ![prevalencia_diabetes_genero](reports/figures/prevalencia_diabetes_genero.png)
+
+Consumo de refrigerante também houve uma mudança; em 2007 68% da população sem diabetes tomavam refrigerante por pelo menos três dias na semana, e em 2019 isso caiu para 47%, uma diminuição de 21% em 13 anos. Para a população com diabetes a porcentagem era de 27% e caiu para 11% em 2019. Isso pode significar que o consumo de refrigerante não está altamente ligado a prevalência de diabetes, mas é necessário pesquisas mais aprofundadas sobre os dados para uma conclusão.
+
+![prevalencia_refri_diabetes](reports/figures/prevalencia_refri_diabetes.png)
 
 
 
 # Conclusões
  
-- Prevalência de diabetes aumentou 6% em 13 anos;
-- Prevalência de consumo de refrigerante diminuiu;
-- Prevalência de diabetes em pessoas com bolsa família apresenta tendência de redução, diferentemente da tendência global;
-- Prevalência maior entre as mulheres em relação aos homens, e mais que o dobro em 2019;
-
-
+ Os resultados da visualização das tabelas da Vigitel mostram um aumento da prevalência de diabetes nas capitais, com tendência a continuar subindo nos próximos anos. Ligando grau de escolaridade, houve uma alta considerativa de pessoas que nunca estudaram, que possuem fundamental incompleto e fundamental completo. Contudo, nos últimos dois anos essa prevalência vem diminuindo para os que nunca estudaram ou possuem fundamental incompleto e aumentando para pessoas com ensino médio completo e fundamental completo. Pessoas que fazem exercício físico por pelo menos três vezes na semana tiveram uma redução. Tiveram também uma redução na população que consome refrigerante.
+    No entanto, é necessário fazer uma visualização mais aprofundada desses dados, usando a ponderação pelo método rake para que possamos chegar em uma visualizações mais significativas e consistente dos dados. 
+ 
 # Trabalhos Futuros
 
-Este trabalho demonstrou o quão importante é entender a base de dados e saber quais gráficos e tabelas melhor representam o resultado de uma análise. No caso do VIGITEL, por ser em formato de pesquisa (_Survey_) encontramos a dificuldade de se utilizar o **peso rake**, conforme citado na página do VIGITEL. Portanto, como trabalhos futuros é aprofundar a programação para que leve em consideração esta ponderação nos dados, além de procurar outras bases de dados brasileiras referentes à incidência e prevalência de diabetes.
+Este trabalho demonstrou o quão importante é entender a base de dados e saber quais gráficos e tabelas melhor representam o resultado de uma análise. No caso do VIGITEL, por ser em formato de pesquisa (_Survey_) encontramos a dificuldade de se utilizar o **peso rake**, conforme citado na página do VIGITEL. Portanto, como trabalhos futuros precisamos aprofundar a programação para que leve em consideração esta ponderação nos dados, além de procurar outras bases de dados brasileiras referentes à incidência e prevalência de diabetes, fazendo interligações mais profundas com outros dados, tais como os hábitos alimentares completos.
 
-- Utilizar outras bases de dados;
-- Dados socioeconômicos;
-- Dados alimentícios mais complexos;
 ## Referência
 
 > [1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-21002012000200020&lng=en&nrm=iso>. access on  03  July  2020.  http://dx.doi.org/10.1590/S0103-21002012000200020.
@@ -195,6 +193,10 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 > [5] BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
 
 > [6] BUSNELO, E. D. S. et al. Perfil epidemiológico de pessoas com diabetes mellitus atendidas nas estratégias saúde da família. Revista de Enfermagem e Atenção à Saúde, v. 8, n. 2, 2020. 
+
+> [7] BRASIL. Lei n. 10.836. Cria o Programa Bolsa Família e dá outras providências. 9 jan. 2004 a.
+
+
 
 
 
