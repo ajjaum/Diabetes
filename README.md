@@ -161,6 +161,8 @@ Outro fato interessante de ser observado é o aumento da prevalência de diabete
 
 ![prevalencia_bolsa_familia_diabetes](reports/figures/prevalencia_bolsa_familia_diabetes.png)
 
+A partir da análise do gráfico de prevalência do diabetes por gênero, foi possível concluir que o perfil predominante foi o do sexo feminino e através da literatura [6] também foi constatado que a maioria dessa população pertence ao sexo feminino, o que pode ter sido contribuído pelo fato de que as mulheres procuram com mais frequência os serviços de saúde e também devido às alterações hormonais, visto que a idade de início é aproximado à idade da menopausa, foi correlacionado a hipertensão como doença concomitante e ao nível de escolaridade no qual a maioria não concluiu o ensino médio; vale ressaltar que esse estudo foi realizado em uma amostra de 222 pessoas, o que também limita os resultados.
+
 ![prevalencia_diabetes_genero](reports/figures/prevalencia_diabetes_genero.png)
 
 
@@ -191,6 +193,9 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 > [4] MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
 
 > [5] BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
+
+> [6] BUSNELO, E. D. S. et al. Perfil epidemiológico de pessoas com diabetes mellitus atendidas nas estratégias saúde da família. Revista de Enfermagem e Atenção à Saúde, v. 8, n. 2, 2020. 
+
 
 
 
