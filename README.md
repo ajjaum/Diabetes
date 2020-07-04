@@ -5,6 +5,7 @@
 ~~~
 <Descreva resumidamente o que fará o projeto. O resumo idealmente deve: apresentar o contexto; indicar o problema; apresentar a sua solução para o problema; indicar porque a sua solução é melhor do que os esforços atuais (não obrigatório); concluir com os resultados alcançados.>
 ~~~
+Neste projeto, foi avaliada a prevalência de diabetes no Brasil utilizando a base de dados Vigitel (Sistema de Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico) de 2007 a 2019. Também foram avaliados fatores que poderiam ser associados a esta doença e realizadas análises estatísticas utilizando a linguagem de programação Python 3 e as bibliotecas Matplotlib, Pandas, Seaborn e Ploty, a fim de compreender melhor a diabetes ao longo do tempo, no Brasil. Pode-se inferir que a prevalência de diabetes: aumentou 6% em 13 anos; apresentou tendência de redução entre os que recebem o auxílio bolsa família do Governo Federal, diferentemente da tendência global; e é maior entre mulheres em relação aos homens. Além disso, o fator consumo de refrigerantes teve diminuição na prevalência.
 
 # Abstract in English
 ~~~
@@ -143,6 +144,7 @@ Uma dificuldade grande que tivemos com a leitura das tabelas é que existem muit
 
 A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
 
+A média da idade de início da diabetes aumentou 3 anos desde 2015. Isso pode ser um sinal de que a população está melhorando seus hábitos, visto que elas estão tendo diabetes em um período mais tardio. Após a visualização dos dados essa pesquisa pôde concluir que a população das capitais estão diminuindo o consumo de refrigerantes de forma significativa. Não foi encontrado nenhuma pesquisa que fizesse essa relação durante os anos com a população adulta brasileira.
 ![boxplot_inicio_idade_diabetes](reports/figures/boxplot_inicio_idade_diabetes.png)
 
 ![indice_diabetes_pessoas_com_pressao_alta](reports/figures/indice_diabetes_pessoas_com_pressao_alta.png)
@@ -150,10 +152,6 @@ A discussão dos resultados também pode ser feita aqui na medida em que os resu
 Pode-se observar a partir dos gráficos com dados de nível de escolaridade, que a prevalência de diabetes e o nível de escolaridade são inversamente proporcionais, ou seja, quanto maior o nível de instrução menor é a prevalência de diabetes, na literatura já foi estudado este componente socioeconômico em uma unidade básica de saúde em Ribeirão Preto (SP) [1], em que portadores de diabetes mellitus tipo 2 apresentavam em média 4,54 anos de estudo.
 
 Outro fato interessante de ser observado é o aumento da prevalência de diabetes mellitus ao longo dos anos, de 2007 a 2019, em todos níveis de instrução, porém há um aumento mais acentuado nos níveis de instrução mais baixos,  isso pode ser visto no grupo de indivíduos que nunca estudou em que o aumento foi de 8% e no grupo com ensino fundamental incompleto que foi de 9%, ao passo que no grupo que possuía ensino superior completo ou pós graduação esse aumento foi de apenas 4% para cada um. Além disso, analisando intragrupo, isto é, somente dentro de um grupo de nível de escolaridade, a prevalência de diabetes é maior entre os que nunca estudaram e  também no fundamental incompleto, comparado aos demais.
-
-referência
-
-
 
 ![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
 
@@ -170,7 +168,7 @@ referência
 
 
 # Conclusões
-
+ 
 - Prevalência de diabetes aumentou 6% em 13 anos;
 - Prevalência de consumo de refrigerante diminuiu;
 - Prevalência de diabetes em pessoas com bolsa família apresenta tendência de redução, diferentemente da tendência global;
@@ -188,13 +186,13 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 
 > [1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-21002012000200020&lng=en&nrm=iso>. access on  03  July  2020.  http://dx.doi.org/10.1590/S0103-21002012000200020.
 
-> FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
+> [2] FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
 
-> Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
+> [3] Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
 
-> MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
+> [4] MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
 
-> BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
+> [5] BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
 
 
 
