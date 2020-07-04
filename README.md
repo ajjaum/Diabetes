@@ -157,6 +157,14 @@ A discussão dos resultados também pode ser feita aqui na medida em que os resu
 
 ![indice_diabetes_pessoas_com_pressao_alta](reports/figures/indice_diabetes_pessoas_com_pressao_alta.png)
 
+Pode-se observar a partir dos gráficos com dados de nível de escolaridade, que a prevalência de diabetes e o nível de escolaridade são inversamente proporcionais, ou seja, quanto maior o nível de instrução menor é a prevalência de diabetes, na literatura já foi estudado este componente socioeconômico em uma unidade básica de saúde em Ribeirão Preto (SP) [1], em que portadores de diabetes mellitus tipo 2 apresentavam em média 4,54 anos de estudo.
+
+Outro fato interessante de ser observado é o aumento da prevalência de diabetes mellitus ao longo dos anos, de 2007 a 2019, em todos níveis de instrução, porém há um aumento mais acentuado nos níveis de instrução mais baixos,  isso pode ser visto no grupo de indivíduos que nunca estudou em que o aumento foi de 8% e no grupo com ensino fundamental incompleto que foi de 9%, ao passo que no grupo que possuía ensino superior completo ou pós graduação esse aumento foi de apenas 4% para cada um. Além disso, analisando intragrupo, isto é, somente dentro de um grupo de nível de escolaridade, a prevalência de diabetes é maior entre os que nunca estudaram e  também no fundamental incompleto, comparado aos demais.
+
+referência
+
+
+
 ![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
 
 ![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
@@ -186,3 +194,7 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 - Utilizar outras bases de dados;
 - Dados socioeconômicos;
 - Dados alimentícios mais complexos;
+
+#Referências
+
+[1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-21002012000200020&lng=en&nrm=iso>. access on  03  July  2020.  http://dx.doi.org/10.1590/S0103-21002012000200020.
