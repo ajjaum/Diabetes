@@ -8,9 +8,7 @@
 Neste projeto, foi avaliada a prevalência de diabetes no Brasil utilizando a base de dados Vigitel (Sistema de Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico) de 2007 a 2019. Também foram avaliados fatores que poderiam ser associados a esta doença e realizadas análises estatísticas utilizando a linguagem de programação Python 3 e as bibliotecas Matplotlib, Pandas, Seaborn e Ploty, a fim de compreender melhor a diabetes ao longo do tempo, no Brasil. Pode-se inferir que a prevalência de diabetes: aumentou 6% em 13 anos; apresentou tendência de redução entre os que recebem o auxílio bolsa família do Governo Federal, diferentemente da tendência global; e é maior entre mulheres em relação aos homens. Além disso, o fator consumo de refrigerantes teve diminuição na prevalência.
 
 # Abstract in English
-~~~
-<English version of the abstract.>
-~~~
+In this project, the prevalence of diabetes in Brazil was evaluated using Vigitel (Surveillance System for Risk and Protective Factors for Chronic Diseases by Phone Survey) as database from 2007 to 2019. Factors that could be associated with this disease were also evaluated and statistical analyses were performed using Python 3.0 as programming language and Matplotlib, Pandas, Seaborn and Ploty as libraries, in purpose of understand diabetes in Brazil over time. It can be inferred that the prevalence of diabetes: increased by 6% in 13 years; there was a downward trend among those who has been receiving “bolsa familia” (a financial social assistance) from the Federal Government, unlike the global trend; and it is higher among women compared to men. In addition, the prevalence of soft drink consumption decreased.
 
 # Equipe
 * Heitor Soares Mattosinho      - 262947
