@@ -75,16 +75,6 @@ Com base nos dados do Vigitel de 2007 a 2019 qual a prevalência de diabetes em 
 
 Avaliar a prevalência de diabetes em brasileiros e verificar se há associação com outros fatores da pesquisa Vigitel de 2007 a 2019.
 
-## Referência
-
-> FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
-
-> Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
-
-> MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
-
-> BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
-
 # Recursos e Métodos
 
 ## Bases de Dados
@@ -194,7 +184,17 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 - Utilizar outras bases de dados;
 - Dados socioeconômicos;
 - Dados alimentícios mais complexos;
+## Referência
 
-#Referências
+> [1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-21002012000200020&lng=en&nrm=iso>. access on  03  July  2020.  http://dx.doi.org/10.1590/S0103-21002012000200020.
 
-[1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-21002012000200020&lng=en&nrm=iso>. access on  03  July  2020.  http://dx.doi.org/10.1590/S0103-21002012000200020.
+> FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
+
+> Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
+
+> MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   Available from <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0066-782X2010001200025&lng=en&nrm=iso>. access on  02  July  2020.  https://doi.org/10.1590/S0066-782X2010001200025.
+
+> BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
+
+
+
