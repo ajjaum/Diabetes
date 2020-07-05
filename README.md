@@ -172,11 +172,11 @@ A média da idade de início da diabetes aumentou 3 anos desde 2015. Isso pode s
 
 Pode-se observar a partir dos gráficos com dados de nível de escolaridade, que a prevalência de diabetes e o nível de escolaridade são inversamente proporcionais, ou seja, quanto maior o nível de instrução menor é a prevalência de diabetes, na literatura já foi estudado este componente socioeconômico em uma unidade básica de saúde em Ribeirão Preto (SP) (Rodrigues, 2012), em que portadores de diabetes mellitus tipo 2 apresentavam em média 4,54 anos de estudo.
 
-![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
+![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
 
 Outro fato interessante de ser observado é o aumento da prevalência de diabetes mellitus ao longo dos anos, de 2007 a 2019, em todos níveis de instrução, porém há um aumento mais acentuado nos níveis de instrução mais baixos,  isso pode ser visto no grupo de indivíduos que nunca estudou em que o aumento foi de 8% e no grupo com ensino fundamental incompleto que foi de 9%, ao passo que no grupo que possuía ensino superior completo ou pós graduação esse aumento foi de apenas 4% para cada um. Além disso, analisando intragrupo, isto é, somente dentro de um grupo de nível de escolaridade, a prevalência de diabetes é maior entre os que nunca estudaram e  também no fundamental incompleto, comparado aos demais.
 
-![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
+![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
 
 Sobre o programa bolsa família (PBF), pode-se observar no gráfico que a prevalência de diabetes caiu neste grupo, isto pode estar associado às condicionalidades do programa em que o acesso a saúde e educação são condições para o recebimento do benefício (Brasil, 2004), mas é importante ressaltar que o decréscimo foi de 1% então há necessidade de mais estudos nesta área para afirmar se há relação entre bolsa família e diabetes.
 
