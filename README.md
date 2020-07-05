@@ -16,9 +16,10 @@ In this project, the prevalence of diabetes in Brazil was evaluated using Vigite
 
 # Vídeo do Projeto
 
-[Vídeo](reports/videos/apresentacao_video.mp4)
-
 [![Watch the video](reports/figures/intro.jpg)](https://drive.google.com/open?id=1MR0ILckeHpdOSC1Cp5oSyCuxH6lCsk-C)
+
+O vídeo pode ser acessado [aqui](https://github.com/ajjaum/Diabetes/blob/master/reports/videos/apresentacao_video.mp4)
+
 
 # Introdução e Motivação
 
