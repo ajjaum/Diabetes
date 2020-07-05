@@ -105,23 +105,39 @@ Matplotlib | https://matplotlib.org/ | `<Descrição da Ferramenta 2 e para que 
 Seaborn | https://seaborn.pydata.org/ | `<Descrição da Ferramenta 2 e para que ela foi usada no projeto.>`
 
 # Metodologia
-~~~
-<Abordagem/metodologia adotada, incluindo especificação de quais técnicas foram exploradas, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.>
-~~~
+
+Este projeto foi baseado na estruturação e visualização de dados. Separados em dois fluxos: [transformação de dados](https://github.com/ajjaum/Diabetes/blob/master/notebooks/transformacao_dados.ipynb) e [visualização de dados](https://github.com/ajjaum/Diabetes/raw/master/notebooks/diabetes.ipynb). O primeiro faz a leitura dos arquivos [originais](https://github.com/ajjaum/Diabetes/tree/master/data/raw), na base do VIGITEL e cria novas tabelas, filtrando as colunas principais utilizadas neste trabalho. A segunda parte, de visualização de dados, é responsável por criar as associações e análises da diabetes, além da criação dos gráficos, mostrados na parte de resultados.
+
+Todo o desenvolvimento foi feito utilizando linguagem de programação **Python** e o uso de bibliotecas para manipulação (_pandas_) e visualização de dados (_matplotlib, plotly ee seaborn_).
 
 ## Detalhamento do Projeto
-~~~
-<Apresente aqui detalhes da análise. Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 
-Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.>
-~~~
+Para este projeto, as planilhas para analise e visualização de dados foram geradas. Para leitura basta utilizar o código abaixo, conforme o ano desejado:
 
 ~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
+df = pd.read_csv("https://raw.githubusercontent.com/ajjaum/Diabetes/master/data/processed/2019.csv", sep=';', header = 0)
 ~~~
+
+Para a visualização dos gráfico em _Plotly_, no notebook, é necessário utilizar a seguinte função:
+
+~~~python
+def configure_plotly_browser_state():
+  import IPython
+  display(IPython.core.display.HTML('''
+        <script src="/static/components/requirejs/require.js"></script>
+        <script>
+          requirejs.config({
+            paths: {
+              base: '/static/base',
+              plotly: 'https://cdn.plot.ly/plotly-1.5.1.min.js?noext',
+            },
+          });
+        </script>
+        '''))
+~~~
+
+As bibliotecas criadas foram baseadas na prevalência da diabetes e suas associações com outras características (pressão alta, alimentação, idade, etc).
+
 
 ## Evolução do Projeto
 
@@ -136,32 +152,31 @@ Uma dificuldade grande que tivemos com a leitura das tabelas é que existem muit
 
 # Resultados e Discussão
 
-<Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
-
-A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
-
-A média da idade de início da diabetes aumentou 3 anos desde 2015. Isso pode ser um sinal de que a população está melhorando seus hábitos, visto que elas estão tendo diabetes em um período mais tardio. Após a visualização dos dados essa pesquisa pôde concluir que a população das capitais estão diminuindo o consumo de refrigerantes de forma significativa. Não foi encontrado nenhuma pesquisa que fizesse essa relação durante os anos com a população adulta brasileira.
-![boxplot_inicio_idade_diabetes](reports/figures/boxplot_inicio_idade_diabetes.png)
-
-![indice_diabetes_pessoas_com_pressao_alta](reports/figures/indice_diabetes_pessoas_com_pressao_alta.png)
-
-Pode-se observar a partir dos gráficos com dados de nível de escolaridade, que a prevalência de diabetes e o nível de escolaridade são inversamente proporcionais, ou seja, quanto maior o nível de instrução menor é a prevalência de diabetes, na literatura já foi estudado este componente socioeconômico em uma unidade básica de saúde em Ribeirão Preto (SP) [1], em que portadores de diabetes mellitus tipo 2 apresentavam em média 4,54 anos de estudo.
-
-Outro fato interessante de ser observado é o aumento da prevalência de diabetes mellitus ao longo dos anos, de 2007 a 2019, em todos níveis de instrução, porém há um aumento mais acentuado nos níveis de instrução mais baixos,  isso pode ser visto no grupo de indivíduos que nunca estudou em que o aumento foi de 8% e no grupo com ensino fundamental incompleto que foi de 9%, ao passo que no grupo que possuía ensino superior completo ou pós graduação esse aumento foi de apenas 4% para cada um. Além disso, analisando intragrupo, isto é, somente dentro de um grupo de nível de escolaridade, a prevalência de diabetes é maior entre os que nunca estudaram e  também no fundamental incompleto, comparado aos demais.
-
-![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
-
-![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
+Os dados do VIGITEL amostram o estudo em 26 capitais brasileiras e o Distrito Federal. 
 
 ![geo_capitais_2019](reports/figures/geo_capitais_2019.png)
 
+Observa-se um aumento da prevalência na população estudada ao longo dos último 13 anos.  
+
 ![prevalencia_diabetes_brasil](reports/figures/prevalencia_diabetes_brasil.png)
 
-Sobre o programa bolsa família (PBF), pode-se observar no gráfico que a prevalência de diabetes caiu neste grupo, isto pode estar associado às condicionalidades do programa em que o acesso a saúde e educação são condições para o recebimento do benefício [ref], mas é importante ressaltar que o decréscimo foi de 1% então há necessidade de mais estudos nesta área para afirmar se há relação entre bolsa família e diabetes.
+A média da idade de início da diabetes aumentou 3 anos desde 2015. Isso pode ser um sinal de que a população está melhorando seus hábitos, visto que elas estão tendo diabetes em um período mais tardio. Após a visualização dos dados essa pesquisa pôde concluir que a população das capitais estão diminuindo o consumo de refrigerantes de forma significativa. Não foi encontrado nenhuma pesquisa que fizesse essa relação durante os anos com a população adulta brasileira.
+
+![boxplot_inicio_idade_diabetes](reports/figures/boxplot_inicio_idade_diabetes.png)
+
+Pode-se observar a partir dos gráficos com dados de nível de escolaridade, que a prevalência de diabetes e o nível de escolaridade são inversamente proporcionais, ou seja, quanto maior o nível de instrução menor é a prevalência de diabetes, na literatura já foi estudado este componente socioeconômico em uma unidade básica de saúde em Ribeirão Preto (SP) (Rodrigues, 2012), em que portadores de diabetes mellitus tipo 2 apresentavam em média 4,54 anos de estudo.
+
+![Prevalência_diabetes_pelo_grau_escolaridade_subplot](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade_subplot.png)
+
+Outro fato interessante de ser observado é o aumento da prevalência de diabetes mellitus ao longo dos anos, de 2007 a 2019, em todos níveis de instrução, porém há um aumento mais acentuado nos níveis de instrução mais baixos,  isso pode ser visto no grupo de indivíduos que nunca estudou em que o aumento foi de 8% e no grupo com ensino fundamental incompleto que foi de 9%, ao passo que no grupo que possuía ensino superior completo ou pós graduação esse aumento foi de apenas 4% para cada um. Além disso, analisando intragrupo, isto é, somente dentro de um grupo de nível de escolaridade, a prevalência de diabetes é maior entre os que nunca estudaram e  também no fundamental incompleto, comparado aos demais.
+
+![Prevalência_diabetes_pelo_grau_escolaridade](reports/figures/Prevalência_diabetes_pelo_grau_escolaridade.png)
+
+Sobre o programa bolsa família (PBF), pode-se observar no gráfico que a prevalência de diabetes caiu neste grupo, isto pode estar associado às condicionalidades do programa em que o acesso a saúde e educação são condições para o recebimento do benefício (Brasil, 2004), mas é importante ressaltar que o decréscimo foi de 1% então há necessidade de mais estudos nesta área para afirmar se há relação entre bolsa família e diabetes.
 
 ![prevalencia_bolsa_familia_diabetes](reports/figures/prevalencia_bolsa_familia_diabetes.png)
 
-A partir da análise do gráfico de prevalência do diabetes por gênero, foi possível concluir que o perfil predominante foi o do sexo feminino e através da literatura [6] também foi constatado que a maioria dessa população pertence ao sexo feminino, o que pode ter sido contribuído pelo fato de que as mulheres procuram com mais frequência os serviços de saúde e também devido às alterações hormonais, visto que a idade de início é aproximado à idade da menopausa, foi correlacionado a hipertensão como doença concomitante e ao nível de escolaridade no qual a maioria não concluiu o ensino médio; vale ressaltar que esse estudo citado foi realizado em uma amostra de 222 pessoas, em uma cidade do interior do estado do Rio Grande do Sul, o que também limita a generalização dos resultados.
+A partir da análise do gráfico de prevalência do diabetes por gênero, foi possível concluir que o perfil predominante foi o do sexo feminino e através da literatura (Busnelo, 2020) também foi constatado que a maioria dessa população pertence ao sexo feminino, o que pode ter sido contribuído pelo fato de que as mulheres procuram com mais frequência os serviços de saúde e também devido às alterações hormonais, visto que a idade de início é aproximado à idade da menopausa, foi correlacionado a hipertensão como doença concomitante e ao nível de escolaridade no qual a maioria não concluiu o ensino médio; vale ressaltar que esse estudo citado foi realizado em uma amostra de 222 pessoas, em uma cidade do interior do estado do Rio Grande do Sul, o que também limita a generalização dos resultados.
 
 ![prevalencia_diabetes_genero](reports/figures/prevalencia_diabetes_genero.png)
 
@@ -169,6 +184,7 @@ Consumo de refrigerante também houve uma mudança; em 2007 68% da população s
 
 ![prevalencia_refri_diabetes](reports/figures/prevalencia_refri_diabetes.png)
 
+![indice_diabetes_pessoas_com_pressao_alta](reports/figures/indice_diabetes_pessoas_com_pressao_alta.png)
 
 
 # Conclusões
@@ -182,22 +198,16 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 
 ## Referência
 
-> [1] RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .   
+> BRASIL. Lei n. 10.836. Cria o Programa Bolsa Família e dá outras providências. 9 jan. 2004 a.
 
-> [2] FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
+> BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
 
-> [3] Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
+> BUSNELO, E. D. S. et al. Perfil epidemiológico de pessoas com diabetes mellitus atendidas nas estratégias saúde da família. **Revista de Enfermagem e Atenção à Saúde**, v. 8, n. 2, 2020. 
 
-> [4] MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .   
+> Diabetes overview. Disponível em <https://www.who.int/health-topics/diabetes#tab=tab_1>. Acesso em: 01 jul. 2020.
 
-> [5] BRASIL. Ministério da Saúde. Vigitel Brasil 2019: vigilância de fatores de risco e proteção para doenças crônicas por inquérito telefônico. Brasília, DF: Ministério da Saúde, 2020. p. 14.
+> FIGUEIREDO, Danielly Mesquita; RABELO, Flávia Lúcia Abreu. Diabetes insipidus: principais aspectos e análise comparativa com diabetes mellitus. **Semina: Ciências Biológicas e da Saúde**, v. 30, n. 2, p. 155-162, 2009.
 
-> [6] BUSNELO, E. D. S. et al. Perfil epidemiológico de pessoas com diabetes mellitus atendidas nas estratégias saúde da família. Revista de Enfermagem e Atenção à Saúde, v. 8, n. 2, 2020. 
+> MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .
 
-> [7] BRASIL. Lei n. 10.836. Cria o Programa Bolsa Família e dá outras providências. 9 jan. 2004 a.
-
-
-
-
-
-
+> RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .
