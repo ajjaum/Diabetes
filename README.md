@@ -14,12 +14,17 @@ In this project, the prevalence of diabetes in Brazil was evaluated using Vigite
 * Stephania Slis Raggio Santos  - 137608
 * João Guilherme Ito Cypriano   - 061701
 
-# Vídeo do Projeto
+# Mídias
+
+## Vídeo do Projeto
 
 [![Watch the video](reports/figures/intro.jpg)](https://drive.google.com/open?id=1MR0ILckeHpdOSC1Cp5oSyCuxH6lCsk-C)
 
 O vídeo pode ser acessado [aqui](https://github.com/ajjaum/Diabetes/blob/master/reports/videos/apresentacao_video.mp4)
 
+## Apresentação do projeto
+
+[Acesso à apresentação](https://github.com/ajjaum/Diabetes/blob/master/reports/Apresenta%C3%A7%C3%A3o.pptx)
 
 # Introdução e Motivação
 
