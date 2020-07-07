@@ -217,3 +217,25 @@ Este trabalho demonstrou o quão importante é entender a base de dados e saber 
 > MARASCHIN, Jorge de Faria et al. Classificação do diabete melito. **Arq. Bras. Cardiol**.,  São Paulo ,  v. 95, n. 2, p. 40-46,  Aug.  2010 .
 
 > RODRIGUES, Flávia Fernanda Luchetti et al . Relação entre conhecimento, atitude, escolaridade e tempo de doença em indivíduos com diabetes mellitus. Acta paul. enferm.,  São Paulo ,  v. 25, n. 2, p. 284-290,    2012 .
+
+# Estrutura de Arquivos e Pastas
+
+~~~
+├── README.md          <- apresentação do projeto e estrutura das pastas
+│
+├── data
+│   ├── external       <- dados de terceiros (não utilizado)
+│   ├── interim        <- dados intermediários (não utilizado)
+│   ├── processed      <- dados finais usados para a modelagem
+│   └── raw            <- dados originais sem modificações
+│
+├── docs               <- Padrão do Sphinx (python documentation generator)
+│
+├── notebooks          <- Jupyter notebooks criados
+│
+├── references         <- Documentos de referência para esse estudo
+│
+└── reports            <- ppt do projeto
+    ├── figures        <- imagens geradas
+    └── videos         <- vídeo de introdução
+~~~
